@@ -16,9 +16,7 @@
     "cors": "^2.8.5",
     "dotenv": "^16.4.1",
     "express": "^4.18.2",
-    "fs": "^0.0.1-security",
     "nodemon": "^3.0.3",
-    "qrcode-svg": "^1.1.0",
     "qrcode-terminal": "^0.12.0",
     "whatsapp-web.js": "^1.23.0"
   }

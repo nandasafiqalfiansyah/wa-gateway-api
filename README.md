@@ -4,6 +4,10 @@
 
 WA Web is a Node.js application that provides a web interface for WhatsApp Web using the WhatsApp Web API wrapper `whatsapp-web.js`.
 
+> 🔔 INFO
+>
+> 'NodeJS v12 or higher is required'
+
 ## Installation
 
 1. Clone this repository.
@@ -31,7 +35,6 @@ git clone https://github.com/nandasafiqalfiansyah/wa-gateway-api.gits
 - `cors`: Middleware for enabling Cross-Origin Resource Sharing (CORS).
 - `dotenv`: Module to load environment variables from a `.env` file.
 - `nodemon`: Development utility that automatically restarts the server when changes are detected.
-- `qrcode-svg`: Generates QR codes in SVG format.
 - `qrcode-terminal`: Displays QR codes in the terminal.
 
 ### Send Message and response Messages
@@ -57,6 +60,10 @@ const customMessages = [
 ## Contribution
 
 Feel free to contribute by opening a pull request or reporting issues on the [GitHub repository](https://github.com/nandasafiqalfiansyah).
+
+## buymeacoffee
+
+<a href="https://www.buymeacoffee.com/roniemartinez" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
 
 ## License
 

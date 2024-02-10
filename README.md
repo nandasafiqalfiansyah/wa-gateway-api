@@ -2,16 +2,37 @@
 
 ## Description
 
-WA-Web Gateway API is an API that allows integration with WhatsApp services through the web. By using this API, you can integrate WhatsApp services into your web applications.
+WA Web is a Node.js application that provides a web interface for WhatsApp Web using the WhatsApp Web API wrapper `whatsapp-web.js`.
+
+## Installation
+
+1. Clone this repository.
+
+```javascript
+git clone https://github.com/nandasafiqalfiansyah/wa-gateway-api.gits
+```
+
+2. Navigate to the project directory.
+
+3. Run `npm install` to install the dependencies.
 
 ## Usage
 
-### Initialization
+- Run `npm start` to start the server in production mode.
+- Run `npm run dev` to start the server in development mode using Nodemon.
+- The application will be accessible at `http://localhost:5000` by default.
+- You need to have a `.env` file in the root directory with the required environment variables. Example:
 
-```javascript
-const waWebGateway = require("wa-web-gateway-api");
-const api = new waWebGateway();
-```
+## Dependencies
+
+- `express`: Web framework for Node.js.
+- `whatsapp-web.js`: WhatsApp Web API wrapper.
+- `body-parser`: Middleware to parse incoming request bodies.
+- `cors`: Middleware for enabling Cross-Origin Resource Sharing (CORS).
+- `dotenv`: Module to load environment variables from a `.env` file.
+- `nodemon`: Development utility that automatically restarts the server when changes are detected.
+- `qrcode-svg`: Generates QR codes in SVG format.
+- `qrcode-terminal`: Displays QR codes in the terminal.
 
 ### Send Message and response Messages
 

@@ -37,25 +37,37 @@ git clone https://github.com/nandasafiqalfiansyah/wa-gateway-api.gits
 - `nodemon`: Development utility that automatically restarts the server when changes are detected.
 - `qrcode-terminal`: Displays QR codes in the terminal.
 
-### Send Message and response Messages
+## Scan QR
 
-```javascript
-const customMessages = [
-  { command: "!hello", response: "Hi there!" },
-  { command: "!weather", response: "The weather is sunny today." },
-  { command: "!nanda", response: "hello" },
-];
-```
+![Weather BMKG Logo](./assets/qrcode.png)
 
-## Endpoint Table
+## is Already!
 
-<!-- comming soon guys ❤️ -->
+![Weather BMKG Logo](./assets/console.png)
 
-| Endpoint        | HTTP Method | Description              |
-| --------------- | ----------- | ------------------------ |
-| `/send-message` | POST        | Send WhatsApp message    |
-| `/get-contacts` | GET         | Get the list of contacts |
-| `/status`       | GET         | Check service status     |
+## Features Table 📝
+
+| Features                                    | Status |
+| ------------------------------------------- | ------ |
+| Image to Sticker                            | ✅     |
+| Video to Sticker                            | ✅     |
+| Gif to Sticker                              | ✅     |
+| Sticker to Image                            | ✅     |
+| Sticker to Video                            | ❎     |
+| Change Sticker Name & Sticker Author        | ✅     |
+| Prefix can be set in the config/config.json | ✅     |
+| Supports Reply Image to Sticker             | ✅     |
+| Supports Reply Video to Sticker             | ✅     |
+| Supports Reply Gif to Sticker               | ✅     |
+| Supports Reply Stickers to Images           | ✅     |
+
+## Commands Table 📝
+
+| Commands                   | Description                                                                                                                                                     |
+| -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| !sticker                   | Membuat Gambar/Video/Gif menjadi Stiker. Anda juga dapat mengirim Gambar/Video/Gif menjadi Stiker langsung tanpa Command. [dalam keterangan atau pesan balasan] |
+| !image                     | Membuat Stiker menjadi Gambar. Anda juga dapat mengirim Stiker menjadi Gambar langsung tanpa Command. [dalam pesan balasan]                                     |
+| !change <name> \| <author> | Mengubah Nama Stiker & Penulis Stiker sesuai keinginan. [dalam pesan balasan]                                                                                   |
 
 ## Contribution
 

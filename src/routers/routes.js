@@ -7,4 +7,4 @@ const routers = [
   },
 ];
 
-module.exports = { routers };
+module.exports = routers;

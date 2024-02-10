@@ -3,13 +3,12 @@ const cors = require("cors");
 const dotenv = require("dotenv");
 const bodyParser = require("body-parser");
 const { Client, LocalAuth } = require("whatsapp-web.js");
+const routers = require("./routers/routes");
 const qrcode = require("qrcode-terminal");
-const { routers } = require("./routers/routes");
 const handleMessages = require("./handlers/messages.handler");
-const customMessages = require("./Messages/messages");
 
-const app = express();
 dotenv.config();
+const app = express();
 const port = process.env.APP_PORT;
 
 app.use(cors());
@@ -17,7 +16,9 @@ app.use(bodyParser.json());
 
 const client = new Client({
   authStrategy: new LocalAuth(),
+  // proxyAuthentication: { username: 'username', password: 'password' },
   puppeteer: {
+    // args: ['--proxy-server=proxy-server-that-requires-authentication.example.com'],
     headless: false,
   },
 });
@@ -44,7 +45,7 @@ client.on("ready", () => {
   console.log("Client is ready!");
 });
 
-client.on("message", handleMessages(customMessages));
+client.on("message", handleMessages(client));
 
 routers.forEach(({ method, path, handler }) => {
   app[method.toLowerCase()](path, handler);

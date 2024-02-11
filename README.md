@@ -1,5 +1,7 @@
 # WA-Web Gateway API
 
+![WA-Web Gateway API Logo](./assets/wa-web.png)
+
 ## Description
 
 WA Web is a Node.js application that provides a web interface for WhatsApp Web using the WhatsApp Web API wrapper `whatsapp-web.js`.
@@ -75,7 +77,7 @@ Feel free to contribute by opening a pull request or reporting issues on the [Gi
 
 ## buymeacoffee
 
-<a href="https://www.buymeacoffee.com/roniemartinez" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
+<a href="https://www.buymeacoffee.com/nandasafiqx" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
 
 ## License
 

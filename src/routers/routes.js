@@ -1,9 +1,9 @@
-const sendMessage = require("../handlers/message.multi");
+const sendMessage = require("../handlers/sendMessage.handler");
 
 const routers = [
   {
-    method: `POST`,
-    path: `/send-message`,
+    method: `get`,
+    path: `/`,
     handler: sendMessage,
   },
 ];

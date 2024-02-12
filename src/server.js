@@ -1,15 +1,15 @@
 const express = require("express");
 const cors = require("cors");
 const dotenv = require("dotenv");
+const config = require("../config/config.json");
 const bodyParser = require("body-parser");
 const { Client, LocalAuth } = require("whatsapp-web.js");
 const routers = require("./routers/routes");
 const qrcode = require("qrcode-terminal");
-const handleMessages = require("./handlers/messages.handler");
-const moment = require("moment-timezone");
-const colors = require("colors");
 const fs = require("fs");
-const config = require("../config/config.json");
+const colors = require("colors");
+const handleMessages = require("./handlers/main.handler");
+const moment = require("moment-timezone");
 
 dotenv.config();
 const app = express();

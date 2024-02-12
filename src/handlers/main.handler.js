@@ -1,4 +1,5 @@
 const handleMessages = (client, config) => async (message) => {
+  console.log(message.type);
   const isGroups = message.from.endsWith("@g.us") ? true : false;
   if ((isGroups && config.groups) || !isGroups) {
     // Image to Sticker
@@ -37,8 +38,8 @@ const handleMessages = (client, config) => async (message) => {
         client
           .sendMessage(message.from, media, {
             sendMediaAsSticker: true,
-            stickerName: config.name, // Sticker Name = Edit in 'config/config.json'
-            stickerAuthor: config.author, // Sticker Author = Edit in 'config/config.json'
+            stickerName: config.name,
+            stickerAuthor: config.author,
           })
           .then(() => {
             client.sendMessage(message.from, "*[✅]* Successfully!");
